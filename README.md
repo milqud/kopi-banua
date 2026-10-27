@@ -3,7 +3,7 @@ Tugas 1 Pemrograman Web 1 - S1 Sistem Informasi FTI UNISKA MAB
 
 **Nama**   : Ahmad Ma'ruf Mufid
 **NPM**    : 2510020053
-**Tautan** : https://.github.io/kopi-banua/  
+**Tautan** : https://milqud.github.io/kopi-banua/  
 
 ## Deskripsi
 Landing page untuk UMKM kedai kopi. Menampilkan profil usaha,
