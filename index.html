@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kopi Banua - Kopi Robusta Asli Banjarmasin</title>
+  <meta name="description" content="Kedai kopi rumahan di Banjarmasin. Robusta Pengaron disangrai segar setiap pagi. Pesan daring dengan konfirmasi WhatsApp." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="wadah header-isi">
+      <a href="#" class="logo">
+        <img src="image/logo.png" alt="Logo Kopi Banua" class="logo-gambar" onerror="this.onerror=null;this.src='img/logo.png';" />
+        <span class="logo-teks">Kopi Banua</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#jam-buka">Jam Buka</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#testimoni">Testimoni</a></li>
+          <li><a href="#pesan">Pesan</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wadah hero-isi">
+        <div class="hero-teks">
+          <p class="tagline">Kedai Kopi Rumahan sejak 2021</p>
+          <h1>Kopi robusta asli Banjarmasin, disangrai setiap pagi.</h1>
+          <p class="lead">
+            Dipetik dari lereng Pengaron, disangrai dalam kelompok kecil, dan
+            diseduh hangat di cangkir Anda setiap hari.
+          </p>
+          <div class="hero-tombol">
+            <a href="#pesan" class="tombol tombol-utama">Pesan Sekarang</a>
+            <a href="#menu" class="tombol tombol-garis">Lihat Menu</a>
+          </div>
+        </div>
+        <div class="hero-foto">
+          <img src="image/kedai.jpg" alt="Suasana kedai Kopi Banua saat senja" width="480" height="320" onerror="this.onerror=null;this.src='img/kedai.jpg';" />
+        </div>
+      </div>
+    </section>
+
+    <section id="tentang" class="bagian">
+      <div class="wadah">
+        <h2>Tentang Kami</h2>
+        <p class="ringkasan">
+          Bermula dari garasi rumah di Jalan Sultan Adam, Kopi Banua hadir untuk
+          mengenalkan kembali kopi robusta lokal Kalimantan Selatan yang kaya
+          rasa dan dekat di hati.
+        </p>
+        <div class="tiga-kolom">
+          <div class="kartu-fitur">
+            <h3>Biji Lokal</h3>
+            <p>100% robusta dari petani di Pengaron, Banjar.</p>
+          </div>
+          <div class="kartu-fitur">
+            <h3>Sangrai Sendiri</h3>
+            <p>Disangrai manual setiap pagi dengan profil medium-dark.</p>
+          </div>
+          <div class="kartu-fitur">
+            <h3>Harga Bersahabat</h3>
+            <p>Mulai Rp 12.000, semua kalangan bisa menikmati kopi segar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="bagian">
+      <div class="wadah">
+        <h2>Menu Favorit</h2>
+        <p class="ringkasan">
+          Pilih kategori atau cari menu yang Anda inginkan. Seluruh menu disiapkan segar setelah dipesan.
+        </p>
+        
+        <div class="menu-toolbar">
+          <div class="filter-kategori">
+            <button type="button" class="tombol-filter aktif" data-kategori="Semua">Semua</button>
+            <button type="button" class="tombol-filter" data-kategori="Kopi">Kopi</button>
+            <button type="button" class="tombol-filter" data-kategori="Non-Kopi">Non-Kopi</button>
+            <button type="button" class="tombol-filter" data-kategori="Cemilan">Cemilan</button>
+          </div>
+          <div class="urutkan">
+            <label for="pilih-urut">Urutkan:</label>
+            <select id="pilih-urut">
+              <option value="baru">Paling Baru</option>
+              <option value="murah">Harga Termurah</option>
+              <option value="mahal">Harga Tertinggi</option>
+              <option value="nama">Nama A-Z</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="daftar-menu" class="grid-menu"></div>
+      </div>
+    </section>
+
+    <section id="jam-buka" class="bagian">
+      <div class="wadah">
+        <h2>Jam Buka & Paket Hemat</h2>
+        <div class="dua-kolom-tabel">
+          <div>
+            <h3>Jam Operasional Kedai</h3>
+            <div class="bungkus-tabel">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Hari</th>
+                    <th>Buka</th>
+                    <th>Tutup</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Senin - Kamis</td>
+                    <td>08.00</td>
+                    <td>22.00</td>
+                  </tr>
+                  <tr>
+                    <td>Jumat</td>
+                    <td>14.00</td>
+                    <td>23.00</td>
+                  </tr>
+                  <tr>
+                    <td>Sabtu - Minggu</td>
+                    <td>07.00</td>
+                    <td>23.30</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div>
+            <h3>Paket Pagi</h3>
+            <div class="bungkus-tabel">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Paket</th>
+                    <th>Isi</th>
+                    <th>Hemat</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Pagi Banua</td>
+                    <td>Kopi Tubruk + Roti Bakar</td>
+                    <td>Rp 24.000</td>
+                  </tr>
+                  <tr>
+                    <td>Manis Santai</td>
+                    <td>Kopi Susu + Pisang Keju</td>
+                    <td>Rp 28.000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="keterangan-tabel">* Paket hemat berlaku sampai jam 11.00 pagi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeri" class="'bagian">
+      <div class="wadah">
+        <h2>Galeri</h2>
+        <div class="grid-galeri">
+          <figure>
+            <img src="image/kedai.jpg" alt="Kedai Kopi Banua saat senja" loading="lazy" onerror="this.onerror=null;this.src='img/kedai.jpg';" />
+            <figcaption>Kedai kami di Jalan Sultan Adam</figcaption>
+          </figure>
+          <figure>
+            <img src="image/biji-kopi.jpg" alt="Biji kopi robusta Pengaron" loading="lazy" onerror="this.onerror=null;this.src='img/biji-kopi.jpg';" />
+            <figcaption>Biji robusta asli Pengaron</figcaption>
+          </figure>
+          <figure>
+            <img src="image/kopi-susu.jpg" alt="Segelas kopi susu gula aren" loading="lazy" onerror="this.onerror=null;this.src='img/kopi-susu.jpg';" />
+            <figcaption>Segelas kopi susu gula aren</figcaption>
+          </figure>
+          <figure>
+            <video src="image/proses-sangrai.mp4" controls width="100%" poster="image/kedai.jpg"></video>
+            <figcaption>Video proses sangrai pagi</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimoni" class="bagian">
+      <div class="wadah">
+        <h2>Kata Pelanggan</h2>
+        <div class="tiga-kolom">
+          <blockquote class="kartu-testimoni">
+            <p>"Kopi Susu Gula Arennya pas banget, gak kemanisan. Rasa kopinya tetap keluar mantap."</p>
+            <cite>— Rian, Mahasiswa Uniska</cite>
+          </blockquote>
+          <blockquote class="kartu-testimoni">
+            <p>"Tempatnya tenang buat nugas sore-sore. Roti bakar srikayanya wajib dicoba!"</p>
+            <cite>— Nadia, Freelancer Banjarmasin</cite>
+          </blockquote>
+          <blockquote class="kartu-testimoni">
+            <p>"Senang ada kedai yang bangga pakai robusta lokal Pengaron. Sukses terus Kopi Banua!"</p>
+            <cite>— Pak Hendra, Penikmat Kopi</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <aside class="wadah">
+      <div class="kotak-promo">
+        <span class="label-promo">PROMO HARI INI</span>
+        <p>Tunjukkan kartu mahasiswa Anda untuk diskon 10% setiap hari Senin sampai Kamis!</p>
+      </div>
+    </aside>
+
+    <section id="pesan" class="bagian">
+      <div class="wadah">
+        <h2>Pesan Sekarang</h2>
+        <p class="ringkasan">
+          Pesan langsung dari sini. Pesanan akan tercatat di browser Anda dan
+          diteruskan ke WhatsApp kedai.
+        </p>
+        <form id="form-pesan" class="form-pesanan" novalidate>
+          <div class="form-grup">
+            <label for="nama-pemesan">Nama Pemesan</label>
+            <input type="text" id="nama-pemesan" name="nama" required placeholder="Nama Anda" />
+          </div>
+          <div class="form-grup">
+            <label for="wa-pemesan">Nomor WhatsApp</label>
+            <input type="tel" id="wa-pemesan" name="wa" required placeholder="08xxxxxxxxxx" />
+            <small class="petunjuk-input">Minimal 10 digit, diawali 08</small>
+          </div>
+          <div class="form-grup">
+            <label for="pilih-produk">Pilih Menu</label>
+            <select id="pilih-produk" name="produkId" required></select>
+          </div>
+          <div class="form-grup">
+            <label for="jumlah-pesan">Jumlah</label>
+            <input type="number" id="jumlah-pesan" name="jumlah" value="1" min="1" max="50" required />
+          </div>
+          <div class="form-grup">
+            <label>Opsi Penyajian</label>
+            <div class="opsi-radio">
+              <label><input type="radio" name="opsi" value="Dine-in" checked /> Dine-in (Minum di Kedai)</label>
+              <label><input type="radio" name="opsi" value="Takeaway" /> Takeaway (Bawa Pulang)</label>
+            </div>
+          </div>
+          <div class="form-grup">
+            <label for="catatan-pesan">Catatan Khusus</label>
+            <textarea id="catatan-pesan" name="catatan" rows="3" placeholder="Contoh: Es sedikit, gula dipisah..."></textarea>
+          </div>
+          <div class="total-preview">
+            <span>Total Pembayaran:</span>
+            <strong id="label-total">Rp 0</strong>
+          </div>
+          <button type="submit" class="tombol tombol-utama tombol-blok">Kirim Pesanan</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="riwayat" class="bagian">
+      <div class="wadah">
+        <h2>Pesanan Saya</h2>
+        <p class="ringkasan">
+          Daftar pesanan Anda yang tersimpan di perangkat ini.
+        </p>
+        <div class="bungkus-tabel">
+          <table id="tabel-pesanan">
+            <thead>
+              <tr>
+                <th>Waktu</th>
+                <th>Menu</th>
+                <th>Porsi</th>
+                <th>Jumlah</th>
+                <th>Total</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="isi-tabel-pesanan"></tbody>
+          </table>
+        </div>
+        <div class="aksi-riwayat">
+          <button type="button" id="tombol-hapus-pesanan" class="tombol tombol-kecil tombol-garis">Hapus Riwayat Pesanan</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="bagian">
+      <div class="wadah">
+        <h2>Hubungi Kami</h2>
+        <div class="dua-kolom-kontak">
+          <div class="info-kontak">
+            <div class="item-kontak">
+              <h3>WhatsApp</h3>
+              <p><a href="https://wa.me/628115000000" target="_blank" rel="noopener noreferrer">0811-5000-000</a></p>
+            </div>
+            <div class="item-kontak">
+              <h3>Surel</h3>
+              <p><a href="mailto:halo@kopibanua.co.id">halo@kopibanua.co.id</a></p>
+            </div>
+            <div class="item-kontak">
+              <h3>Instagram</h3>
+              <p><a href="https://instagram.com/kopibanua" target="_blank" rel="noopener noreferrer">@kopibanua</a></p>
+            </div>
+            <div class="item-kontak">
+              <h3>Alamat</h3>
+              <p>Jl. Sultan Adam No. 12, Banjarmasin, Kalimantan Selatan</p>
+            </div>
+          </div>
+          <div class="peta-kontak">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1991.622023600607!2d114.59354327273329!3d-3.2896113740615887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de4230b4e342e45%3A0x363c0239eafa00eb!2sFakultas%20Teknologi%20Informasi!5e0!3m2!1sen!2sid!4v1790574174568!5m2!1sen!2sid"
+              width="100%" height="280" allowfullscreen="" loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin" title="Peta Lokasi Kedai Kopi Banua"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wadah footer-isi">
+      <div class="footer-kolom">
+        <h4>Kopi Banua</h4>
+        <p>Kedai kopi rumahan yang mengangkat cita rasa robusta lokal Kalimantan Selatan.</p>
+      </div>
+      <div class="footer-kolom">
+        <h4>Tautan Cepat</h4>
+        <ul>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#jam-buka">Jam Buka</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="footer-kolom">
+        <h4>Lokasi</h4>
+        <p>Jl. Sultan Adam No. 12, Banjarmasin</p>
+        <p>Buka setiap hari mulai pukul 08.00</p>
+      </div>
+    </div>
+    <div class="footer-bawah">
+      <div class="wadah">
+        <p>&copy; 2026 Kopi Banua. Dibuat untuk tugas Pemrograman Web 1 - S1 Sistem Informasi FTI UNISKA.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
